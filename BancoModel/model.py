@@ -5,7 +5,7 @@ class Cliente:
           self.movimentaçõesS = []
 class Conta:
 
-    def __init__(self, saldo=1000, limite_saque=1000):
+    def __init__(self, saldo=0, limite_saque=1000):
         self.saldo = saldo
         self.limite_saque = limite_saque
         
