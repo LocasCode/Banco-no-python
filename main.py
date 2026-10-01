@@ -1,6 +1,6 @@
 
-from	BancoController.controller	import	Controller
+from	BancoController.controller	import	BancoController
 if	__name__	==	"__main__":
-				app	=	Controller()
+				app	=	BancoController()
 				app.iniciar()
 				

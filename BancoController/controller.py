@@ -4,7 +4,7 @@ from BancoModel.model import Cliente
 
 
 
-class Controller:
+class BancoController:
     def __init__(self):
         self.model = Conta()
         self.view = bancoview()
