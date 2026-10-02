@@ -17,7 +17,7 @@ class Conta:
     def depositar(self, valor):
             if valor > 0:
                 self.saldo += valor
-                horario = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+                horario = datetime.now().strftime("%d/%m/%Y %H:%M")
                 self.movimentacoesD.append((valor, horario))
                
     
