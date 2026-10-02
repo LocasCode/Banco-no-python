@@ -40,9 +40,9 @@ class BancoController:
             elif escolha == 4 and loop > 0:
                 self.view.exibir_mensagem(f'Seu saldo é: R${self.model.saldo}')
                 for valor, horario in self.model.movimentacoesD:
-                    self.view.exibir_mensagem(f'depositos: {valor}, {horario}')
+                    self.view.exibir_mensagem(f'deposito: {valor}, {horario}')
                 for valor, horario, taxa in self.model.movimentacoesS:
-                    self.view.exibir_mensagem(f'saques: {valor}, {horario} valor após taxa: {taxa}')
+                    self.view.exibir_mensagem(f'saque: {valor}, {horario} valor após taxa: {taxa}')
             elif escolha == 4 and loop == 0:
                 self.view.Movimentacao()
             loop+= 1

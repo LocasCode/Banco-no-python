@@ -20,7 +20,7 @@ class bancoview:
             return None
     def quantia(self):
         try:
-            return float(input('qual o valor da transferencia?'))
+            return float(input('qual o valor da transferencia?(apenas numeros positivos)'))
         except ValueError:
                 return 0
     def exibir_mensagem(self, mensagem):

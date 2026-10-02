@@ -15,12 +15,11 @@ class Conta:
         
 
     def depositar(self, valor):
-            if valor > 0 and valor <= self.limite_saque:
+            if valor > 0:
                 self.saldo += valor
                 horario = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
                 self.movimentacoesD.append((valor, horario))
-                return self.saldo 
-            return self.saldo 
+               
     
     def porcentagem(self, valor, porcentagem):    
          return valor * (porcentagem/100)
