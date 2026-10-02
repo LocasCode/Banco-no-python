@@ -6,7 +6,7 @@ class bancoview:
 
     
     def menu(self):
-        print('\n ====== Banco Legal ====== ')
+        print('\n ====== Banco Legal 2.0 ====== ')
         print('pressione 1 para depositar ')
         print('pressione 2 para sacar (5% de taxa) ')
         print('pressione 3 para sair ')
@@ -24,7 +24,7 @@ class bancoview:
         except ValueError:
                 return 0
     def exibir_mensagem(self, mensagem):
-        print(f'\n>> {mensagem}')
+        print(f'\n {mensagem}')
   
     def input_invalido(self):
         print('Input Invalido') 
