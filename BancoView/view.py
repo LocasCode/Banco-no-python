@@ -19,8 +19,10 @@ class bancoview:
         except ValueError:
             return None
     def quantia(self):
-        return float(input())
-    
+        try:
+            return float(input('qual o valor da transferencia?'))
+        except ValueError:
+                return 0
     def exibir_mensagem(self, mensagem):
         print(f'\n>> {mensagem}')
   
